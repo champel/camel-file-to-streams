@@ -1,0 +1,36 @@
+== File & Streams Example
+
+=== Introduction
+
+This example shows how to work with files and Streams.
+
+The example consumes generated files from a folder, splits and marshals the content
+and sends the elements to an ``event`` stream. When the file is processed, it is stored
+and a notification with the filename is sent to a ``archive`` stream.
+
+=== Build
+
+You will need to compile this example first:
+
+[source,sh]
+----
+$ mvn compile
+----
+
+=== Run
+
+The example should run if you type
+
+[source,sh]
+----
+$ mvn exec:java
+----
+
+After the example is complete, you should see the logs from the different streams
+and the processed files in the `test/store' folder.
+
+=== Contributions & Suggestions
+
+If you stumble with this project and it helps you, good :) 
+
+If you see a problem or an improvement with the resolution, I am open to talk, learning never ends.
